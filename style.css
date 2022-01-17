@@ -1,27 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 body{
     margin: 0;
-   font-weight: bold;
-   font-family: Noto;
-   text-align: center;
-  background-color: rebeccapurple;
-   color: white;
-    
+    color: #707070;
+    font-size: 1.125em;
+}
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    width: 95%;
+}
+.columns{
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+
 }
 
-#message-el{
-   font-style: italic; 
+img{
+    max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+h1{
+    font-size: 3rem;
+    color: #312614;
+    text-align: center;
 }
 
-button{
-    color: #222;
-    width: 150px;
-    background-color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-radius: 2px;
-    border:  none;
-    margin-top: 4px;
-    margin-bottom: 4px;
+h2{
+    font-size: 1.5em;
+    color: #312614;
+}
+h1 span{
+    color: #b7832f;
+}
+p{
+    margin-top: 0;
+
+}
+
+.col-bg{
+    background: #b7832f;
+    padding: 1em;
+    color: #fff;
+}
+.col-1{
+width: 20%;
+}
+.col-2{
+width: 45%;
+}
+.col-3{
+width: 70%;
+}
+
+
+@media (min-width:600px) {
+    .columns{
+flex-direction: column;
+    }
+    .col-1,.col-2, .col-3{
+        width: 100%;
+    }
 }
